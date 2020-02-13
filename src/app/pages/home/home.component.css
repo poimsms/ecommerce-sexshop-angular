@@ -1,0 +1,145 @@
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    color: coral;
+}
+
+.mesure {
+    cursor: pointer;
+    margin-top:10px;
+    text-transform:uppercase;
+    color:#999;
+    font-size:12px;
+}
+
+.mesure:hover {
+    color: coral;
+}
+
+.button-blog {
+    cursor: pointer;
+    display:inline-block;
+    background:#E1E6EA;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    color:#777;
+    font-size:12.5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.button-blog:hover {
+    color: #444;
+}
+
+.button {
+    cursor: pointer;
+    display:inline-block;
+    background:whitesmoke;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    color:#444;
+    font-size:14px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.button-active {
+    background:slateblue;
+    color: white;
+}
+
+.img-carrusel-dos {
+    height:300px;
+    width:100%;
+    object-fit:cover;
+    cursor: pointer;
+}
+
+.img-carrusel-dos-active {
+    height:300px;
+    width:100%;
+    object-fit:cover;
+    box-shadow: 0 10px 20px -5px rgba(115,115,115,0.75);
+}
+
+.img-carrusel {
+    height:400px;
+    width:100%;
+    object-fit:cover;
+    cursor: pointer;
+}
+
+.img-carrusel-active {
+    height:400px;
+    width:100%;
+    object-fit:cover;
+    box-shadow: 0 10px 20px -5px rgba(115,115,115,0.75);
+}
+
+.img-grid {
+    width:100%;
+    height:700px;
+    object-fit:cover;
+}
+
+.img-grid-dos {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    height:350px;
+}
+
+.img-grid-tres {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    height:340px;
+}
+
+.img-grid-dos-right {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.holder {
+    cursor: pointer;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(30, 30, 30, 0)
+}
+
+.holder:hover {
+    animation: holderOn 0.4s ease forwards;
+}
+
+.fade {
+    opacity:1;
+}
+.fade:hover {
+    animation: fadeout 0.4s ease forwards;
+}
+
+@keyframes holderOn {
+    from {
+        background-color: rgba(30, 30, 30, 0);
+    }
+    to {
+        background-color: rgba(30, 30, 30, 0.1);
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+}

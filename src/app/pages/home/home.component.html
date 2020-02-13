@@ -1,0 +1,171 @@
+<div style="padding:50px;padding-top:0">
+
+    <div style="margin-top:40px;display:flex;justify-content:space-between;">
+        <div style="width:50%;padding-right:5px">
+            <!-- <div style="background-color: rgba(30, 30, 30, 0.5)">
+        <img src="assets/01.jpg" style="background-color: rgba(30, 30, 30, 0.5);width:100%;height:700px;;object-fit:cover;">
+       </div> -->
+
+            <div style="position:relative">
+                <img class="img-grid" src="assets/01.jpg">
+                <div class="holder"></div>
+            </div>
+        </div>
+        <div
+            style="padding-left:5px;height:700px;width:50%;display:flex;flex-direction:column;justify-content:space-between;">
+            <div style="padding-bottom:5px;display:flex;width:100%;justify-content:space-between;">
+                <div style="padding-right:5px">
+                    <div style="position:relative">
+                        <img class="img-grid-dos" src="assets/01.jpg">
+                        <div class="holder"></div>
+                    </div>
+                </div>
+
+                <div style="padding-left:5px">
+                    <div style="position:relative;padding-left:5px">
+                        <img class="img-grid-dos" src="assets/02.jpg">
+                        <div class="holder"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-top:5px;padding-bottom:0;display:flex;justify-content:space-between">
+                <div style="padding-right:5px">
+                    <div style="position:relative">
+                        <img class="img-grid-tres" src="assets/01.jpg">
+                        <div class="holder"></div>
+                    </div>
+                </div>
+
+                <div style="padding-left:5px">
+                    <div style="position:relative;padding-left:5px">
+                        <img class="img-grid-tres" src="assets/02.jpg">
+                        <div class="holder"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top:30px;text-align:center;font-size:35px;color:#222">
+        Sex Doll Chile
+    </div>
+    <div
+        style="font-family: 'Open Sans', sans-serif;font-weight:400;margin-top:20px;text-align:center;font-size:30px;color:#555">
+        Real Dolls a la distancia de un Click mmm
+    </div>
+
+    <div style="display:flex;align-items:center;margin-top:100px;margin-bottom:10px">
+        <hr>
+        <div style="border-top:0.5px solid lightslategray;flex:1"></div>
+        <div
+            style="background:slategrey;color:white;font-weight:700;font-size:14px;padding:3px;padding-left:10px;padding-right:10px">
+            DESTACADAS
+        </div>
+        <div style="border-top:0.5px solid lightslategray;flex:1"></div>
+    </div>
+
+
+    <div style="display:flex;justify-content:space-between;">
+        <div *ngFor="let img of imgs; let i = index" (mouseenter)="holderMouse(i, 'enter')"
+            (mouseleave)="holderMouse(i, 'leave')" style="width:23%">
+
+            <img (mouseenter)="mouseEnter(i)" (mouseleave)="mouseLeave(i)" [src]="img.url" class="fade img-carrusel"
+                [ngClass]="{'img-carrusel-active': img.isHover}">
+            <!-- <img (mouseenter)="mouseEnter(i)" (mouseleave)="mouseLeave(i)" [lazyLoad]="img.url" style="height:400px;width:100%;object-fit:cover;"> -->
+
+            <div class="mesure">
+                153 cm sexy doll
+            </div>
+
+            <a class="title">
+                Sandy
+            </a>
+
+            <div style="display:flex;font-size:12px;margin-top:5px">
+                <i class="fas fa-star" style="color:#D6D6D6;margin-right:2px"></i>
+                <i class="fas fa-star" style="color:#D6D6D6;margin-right:2px"></i>
+                <i class="fas fa-star" style="color:#D6D6D6;margin-right:2px"></i>
+                <i class="fas fa-star" style="color:#D6D6D6;margin-right:2px"></i>
+                <i class="fas fa-star" style="color:#D6D6D6;margin-right:2px"></i>
+            </div>
+            <div style="color:#465157;font-weight:500;margin-top:7px;margin-bottom:10px;font-size:18px;">
+                $1.400.000 - $1.500.000
+            </div>
+            <div (click)="openPage()" class="button" [ngClass]="{'button-active': img.isActive}">
+                SELECCIONAR OPCIONES
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div style="display:flex;align-items:center;margin-top:100px;margin-bottom:10px">
+        <hr>
+        <div style="border-top:0.5px solid lightslategray;flex:1"></div>
+        <div
+            style="background:slategrey;color:white;font-weight:700;font-size:14px;padding:3px;padding-left:10px;padding-right:10px">
+            ULTIMAS CHICAS EN LLEGAR
+        </div>
+        <div style="border-top:0.5px solid lightslategray;flex:1"></div>
+    </div>
+
+
+    <div style="display:flex;justify-content:space-between;">
+        <div *ngFor="let img of imgs; let i = index" (mouseenter)="holderMouse(i, 'enter')"
+            (mouseleave)="holderMouse(i, 'leave')" style="width:23%">
+
+            <img (mouseenter)="mouseEnter(i)" (mouseleave)="mouseLeave(i)" [src]="img.url" class="fade img-carrusel-dos"
+                [ngClass]="{'img-carrusel-dos-active': img.isHover}">
+            <!-- <img (mouseenter)="mouseEnter(i)" (mouseleave)="mouseLeave(i)" [lazyLoad]="img.url" style="height:400px;width:100%;object-fit:cover;"> -->
+
+            <div class="mesure">
+                153 cm sexy doll
+            </div>
+
+            <a class="title">
+                Sandy
+            </a>
+
+            <div style="display:flex;font-size:12px;margin-top:5px">
+                <i class="fas fa-star" style="color:#D6D6D6;margin-right:2px"></i>
+                <i class="fas fa-star" style="color:#D6D6D6;margin-right:2px"></i>
+                <i class="fas fa-star" style="color:#D6D6D6;margin-right:2px"></i>
+                <i class="fas fa-star" style="color:#D6D6D6;margin-right:2px"></i>
+                <i class="fas fa-star" style="color:#D6D6D6;margin-right:2px"></i>
+            </div>
+            <div style="color:#465157;font-weight:500;margin-top:7px;margin-bottom:10px;font-size:18px;">
+                $1.400.000 - $1.500.000
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="display:flex;align-items:center;margin-top:100px;margin-bottom:10px">
+        <div style="color:#444;font-weight:700;font-size:16px;padding:3px;padding-left:10px;padding-right:10px">
+            NUESTRO BLOG
+        </div>
+        <hr>
+        <div style="border-top:0.5px solid lightslategray;flex:1"></div>
+    </div>
+
+    <div style="display:flex">
+
+        <img src="assets/01.jpg" style="width:300px;height:300px;object-fit:cover">
+        <div style="margin-left:20px;margin-top:10px">
+            <div style="color:#444;font-size:18px;font-weight:500;">
+                Como limpiar nuestras Muñecas Sexuales
+            </div>
+
+            <div style="color:#888;margin-bottom:20px">
+                ¿Con qué frecuencia necesito limpiar mi muñeca? Hay dos aspectos...
+            </div>
+
+            <div class="button-blog">
+                LEER MÁS
+            </div>
+        </div>
+    </div>
+
+</div>
